@@ -9,6 +9,7 @@ class MainActivity : AppCompatActivity() {
 		super.onCreate(savedInstanceState)
 
 		val myCanvasView = MyCanvasView(this)
+		@Suppress("DEPRECATION")
 		myCanvasView.systemUiVisibility = SYSTEM_UI_FLAG_FULLSCREEN
 
 		myCanvasView.contentDescription = getString(R.string.canvasContentDescription)
